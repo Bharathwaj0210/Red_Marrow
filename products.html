@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+  
+    <nav>
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="index.html"><img src="./images/Logo2.png" alt="logo" class="logo" /></a>
+          <div class="nav-item">
+
+            <div>
+              <strong style="gap: 30px;"><i class="fa-solid fa-location-dot"></i> Location</strong><br>
+              <select id="area-select" class="options" onchange="updateArea()">
+                <option value="Your address">Your address</option>
+                <option value="Adyar">Adyar</option>
+                <option value="Velachery">Poonamallee</option>
+                <option value="T Nagar">T Nagar</option>
+                <option value="Anna Nagar">Anna Nagar</option>
+                <option value="Tambaram">Tambaram</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-center">
+          <input type="text" placeholder="Search meats" class="search-bar" />
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-item" id="userSection">
+            <a href="login.html" id="loginLink">
+              <i class="fa-solid fa-user"></i>
+              <br>
+              <span id="loginText">Login</span>
+            </a>
+          </div>
+
+          <div class="nav-item">
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <br>
+              <span id="cart-count">Cart(0)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="search-container" style="padding:20px;"></div>
+
+    <br />
+    <div id="main-content">
+    <h1>Our Fresh Cuts</h1>
+
+    <label for="categoryFilter">Filter by Category:</label>
+
+    <select id="categoryFilter"></select>
+    <br><br>
+
+    <div id="product-container" class="product-grid"></div>
+
+    <div class="about">
+      <ol>
+        <h6><strong>Company</strong></h6>
+        <p>Privacy and Policy</p>
+        <p>Terms and conditions</p>
+        <p>Health and Support</p>
+      </ol>
+      <ol>
+        <h6><strong>Stay Connected</strong></h6>
+        <p>✉ RedMarrow@gmail.com</p>
+        <p>📞044-695949</p>
+        <p>ⓕFACEBOOK</p>
+      </ol>
+      <ol>
+        <h6><strong>Links</strong></h6>
+        <p>Store located</p>
+        <p>Sitemap</p>
+        <p>Why RedMarrow</p>
+        <p>Franschise</p>
+        <p>Certificates</p>
+        <p><a>Careers</a></p>
+      </ol>
+
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loginText = document.getElementById("loginText");
+      const currentUser = localStorage.getItem("CurrentUser");
+
+      if (currentUser) {
+        loginText.textContent = `${currentUser}`;
+        document.getElementById("loginLink").href = "#"; 
+      }
+    });
+
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

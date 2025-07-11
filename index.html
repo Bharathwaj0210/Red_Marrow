@@ -1,0 +1,310 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tender Cuts</title>
+  <link rel="stylesheet" href="stylestender.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <img src="./images/Logo2.png" alt="logo" class="logo" />
+        <div class="nav-item">
+
+          <div>
+            <strong style="gap: 30px;"><i class="fa-solid fa-location-dot"></i> Location</strong><br>
+            <select id="area-select" class="options" onchange="updateArea()">
+              <option value="Your address">Your address</option>
+              <option value="Adyar">Adyar</option>
+              <option value="Velachery">Poonamallee</option>
+              <option value="T Nagar">T Nagar</option>
+              <option value="Anna Nagar">Anna Nagar</option>
+              <option value="Tambaram">Tambaram</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <input type="text" placeholder="Search meats" class="search-bar" />
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-item" id="userSection">
+          <a href="login.html" id="loginLink">
+            <i class="fa-solid fa-user"></i>
+            <br>
+            <span id="loginText">Login</span>
+          </a>
+        </div>
+
+        <div class="nav-item">
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <br>
+            <span id="cart-count">Cart</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="search-container" style="padding: 20px;"></div>
+
+  <br />
+  <div id="main-content">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/banner1.png" class="d-block w-100" alt="slide1" style="width: 600px;height: 400px;" />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Banner2.png" class="d-block w-100" alt="slide2" style="width: 600px;height: 400px;" />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Banner3.png" class="d-block w-100" alt="slide3" style="width: 600px;height: 400px;" />
+        </div>
+
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="offers">
+      <div class="offers-content">
+        <img src="./images/RM_Logo.png" alt="offers" class="offers-img" />
+        <div class="offers-text">
+          <h5>
+            Enjoy Special Discounted Prices & Unlimited Free Deliveries always.
+          </h5>
+          <p>Know more</p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="category-section">
+      <div class="category-text">
+        <h2>Explore by Category</h2>
+        <p>Farm Fresh Meats and Seafood!</p>
+      </div>
+
+      <div class="category-delivery">
+        <img
+          src="https://images.vexels.com/media/users/3/200066/isolated/preview/6778656beb270356664d5a58dc60f34e-pizza-delivery-scooter-by-vexels.png"
+          alt="Delivery Icon" />
+        <p>
+          <strong>Delivery in</strong> <br />
+          <span>90 Minutes</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="category-list">
+
+
+      <div class="category-item">
+        <a href="products.html?category=chicken">
+          <img src="https://assets.tendercuts.in/category/C/h/444c122b-a639-48ff-8078-5b9b5af74596.jpg" alt="Chicken" />
+        </a>
+
+        <p>Chicken</p>
+      </div>
+
+      <div class="category-item">
+        <a href="products.html?category=mutton">
+          <img src="https://assets.tendercuts.in/category/M/u/96059dfe-3207-4fda-9b96-b99f07eea4dc.jpg" alt="Mutton" />
+        </a>
+        <p>Mutton</p>
+      </div>
+
+      <div class="category-item">
+        <a href="products.html?category=fish">
+          <img src="https://assets.tendercuts.in/category/S/e/f9a8cb8c-ac77-44dd-9be2-e0e80c0db433.jpg" alt="Seafood" />
+        </a>
+        <p>Sea food</p>
+      </div>
+
+      <div class="category-item">
+        <a href="products.html?category=prawns">
+          <img src="https://thumbs.dreamstime.com/b/cooked-prawn-plate-7561553.jpg" alt="Prawns" />
+        </a>
+        <p>Prawns</p>
+      </div>
+
+      <div class="category-item">
+        <a href="products.html?category=ready-to-eat">
+          <img src="https://assets.tendercuts.in/category/R/e/5428837f-7561-4fca-87a1-6ef16e93ff6d.jpg"
+            alt="Ready to Cook" />
+        </a>
+        <p>Ready to cook</p>
+      </div>
+
+
+    </div>
+
+
+    <br>
+    <hr>
+
+
+    <div class="ourblog">
+      <h2>Our Blog</h2>
+      <p>Know More -></p>
+    </div>
+
+    <div class="blog-container">
+      <div class="blog">
+        <img
+          src="https://tendercutsblog.wordpress.com/wp-content/uploads/2025/02/front-view-chef-holding-raw-fish-slices-knife-cutting-board-vegetables-wood-serving-board-kitchen-table.jpg?w=550&h=370"
+          alt="Blog">
+        <h6>Ace your cooking skills with our clean, finest and high quality meat!</h6>
+      </div>
+
+      <div class="blog">
+        <img
+          src="https://tendercutsblog.wordpress.com/wp-content/uploads/2025/02/butcher-cutting-pork-meat-kitchen.jpg?w=550&h=370"
+          alt="Blog">
+        <h6>Impress your guests this weekend with a wholesome fresh meat online that can be easily cooked at home</h6>
+      </div>
+
+      <div class="blog">
+        <img src="https://tendercutsblog.wordpress.com/wp-content/uploads/2021/10/diwali-2-04.jpg?w=550&h=370"
+          alt="Blog">
+        <h6>Why to Try TenderCuts Fresh Online Fish and Meat Delivery at Your Home Today!</h6>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="category-section">
+      <h2>Youtube videos</h2>
+    </div>
+
+    <div class="video-container">
+      <div class="videos">
+        <a href="https://youtu.be/RXnWj0LEf90"><img
+            src="https://cdn2.tendercuts.in/youtube/thumbnaila3141da0-b918-4f3d-a600-c6ec81ada0fb.jpg" alt="Blog"></a>
+      </div>
+      <div class="videos">
+        <a href="https://youtu.be/yQxLTDk9wMY"><img
+            src="https://cdn2.tendercuts.in/youtube/thumbnaila6238c55-4e8c-4fbc-b056-36041f6d6298.jpg" alt="Blog"></a>
+      </div>
+      <div class="videos">
+        <a href="https://youtu.be/RkU0Os9Ed6g"><img
+            src="https://cdn2.tendercuts.in/youtube/thumbnail7a495433-5536-44d4-845a-f9ed85977762.jpg" alt="Blog"></a>
+      </div>
+
+      <div class="videos">
+        <a href="https://youtu.be/teEZhxmrru4"><img
+            src="https://cdn2.tendercuts.in/youtube/thumbnaila9883374-08bc-4fda-9308-e5d52a91775a.jpg" alt="Blog"></a>
+      </div>
+
+      <div class="videos">
+        <a href="https://youtu.be/HYcVL0zY1uc"><img
+            src="https://cdn2.tendercuts.in/youtube/thumbnail41faa4b6-f804-4f48-bb88-9c7ddc73c69c.jpg" alt="Blog"></a>
+      </div>
+
+
+    </div>
+    <br>
+    <hr>
+    <h2 class="category-section">RedMarrow Farm Fresh Meat & Fresh Fish</h2>
+    <div class="knowmore">
+      <details>
+        <summary>Freshly cut, freshly packed meat delivered to your doorstep</summary>
+        <p>
+          Your search for farm-fresh, high-quality meat ends with RedMarrow. Order the best, locally-sourced mutton,
+          chicken, eggs, fish, and seafood from your friendly neighbourhood meat store – RedMarrow.
+          Enjoy lightning-fast home delivery on every order. Order meat online with RedMarrow to whip up a feast fit
+          for a king.
+        </p>
+      </details>
+
+      <details>
+        <summary>Deliciousness in every bite</summary>
+        <p>
+          RedMarrow offers a vast catalogue of fresh and juicy meat products online. Whether you wish to place an order
+          for fresh meat delivery or an assortment of lip-smacking cold cuts, non-veg snacks, pickles, dressings,
+          and spices, you can find it all. At RedMarrow, we also offer a range of scrumptious ready-to-cook, freshly
+          marinated meat products with authentic flavours.
+          Also, sample our all-in-one Chicken and Mutton Biryani Kits to satiate those Biryani cravings in minutes.
+        </p>
+      </details>
+
+      <details>
+        <summary>Our Freshness Tracker Guarantees Fresh meat delivery</summary>
+        <p>
+          At RedMarrow, we do not believe in pre-packaging meats. We begin processing the order – from cleaning
+          and cutting to packing the meat in vacuum-sealed bags only after you place the order. What’s more, you can
+          track your order every step of the way with the RedMarrow Freshness Tracker built into our meat online
+          delivery app.
+        </p>
+      </details>
+
+      <details>
+        <summary>Download the RedMarrow App</summary>
+        <p>
+          Placing your meat online delivery order is as easy as one, two, three.
+          Download the RedMarrow App on your smartphone. Browse through our extensive range of
+          fresh meat products, add them to your cart and place your order after choosing your preferred payment mode.
+          Sit back and relax until we deliver it to your doorstep or track it in real-time on the app. Now you can
+          order meat online and choose your preferred delivery slot. Enjoy exclusive discounts and deals on every
+          RedMarrow order.
+        </p>
+      </details>
+    </div>
+
+    <br><br><br>
+  </div>
+
+  <div class="about">
+    <ol>
+      <h6><strong>Company</strong></h6>
+      <p>Privacy and Policy</p>
+      <p>Terms and conditions</p>
+      <p>Health and Support</p>
+    </ol>
+    <ol>
+      <h6><strong>Stay Connected</strong></h6>
+      <p>✉ RedMarrow@gmail.com</p>
+      <p>📞044-695949</p>
+      <p>ⓕFACEBOOK</p>
+    </ol>
+    <ol>
+      <h6><strong>Links</strong></h6>
+      <p>Store located</p>
+      <p>Sitemap</p>
+      <p>Why RedMarrow</p>
+      <p>Franschise</p>
+      <p>Certificates</p>
+      <p><a>Careers</a></p>
+    </ol>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loginText = document.getElementById("loginText");
+      const currentUser = localStorage.getItem("CurrentUser");
+
+      if (currentUser) {
+        loginText.textContent = `${currentUser}`;
+        document.getElementById("loginLink").href = "#"; 
+      }
+    });
+   
+
+
+  </script>
+
+</body>
+
+</html>
